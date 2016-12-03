@@ -1,0 +1,9 @@
+#!/bin/sh
+for file in /etc/my_init.d/*; do "$file"; 
+te=$?
+if [ $te -ne 0 ]; then
+echo "file: $file errorcode:$te"
+exit $te
+fi
+done
+exit 0
