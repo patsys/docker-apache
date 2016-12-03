@@ -2,10 +2,10 @@
 
 Docker Image mit Apache auf basis von Alpine Linux
 
-Volume: /var/web
+Volume: /app
 
-Root Verzeichnis: /var/web
+Server Root Verzeichnis: /var/www
 
-Config: /var/web/config
+Config: /app/config
 
-Documente: /var/web/www
+Documente: /app/www/localhost/htdocs

@@ -7,5 +7,5 @@ RUN chmod u+x /etc/update.sh
 RUN mkdir /run/apache2/
 RUN mkdir /var/web
 RUN apk update && apk upgrade && apk add apache2 php5-apache2 && rm -rf /var/cache/apk/*
-VOLUME ["/var/web"]
+VOLUME ["/app"]
 CMD ["/etc/start"]
