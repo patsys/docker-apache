@@ -4,7 +4,7 @@ services:
     build: .
     image: patsys/samba
   sut:
-    build: patsys/test-webserver
+    image: patsys/test-webserver
     depends_on:
       - apache 
     environment:
