@@ -9,6 +9,6 @@ services:
       - apache 
     environment:
       - HOST=apache
-      - WORD="PHP Version"
+      - WORD=System
       - INTERVAL=5
       - TRY=30
