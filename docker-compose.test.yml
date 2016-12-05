@@ -2,7 +2,7 @@ version: '2'
 services:
   apache:
     build: .
-    image: patsys/samba
+    image: patsys/apache
   sut:
     image: patsys/test-webserver
     depends_on:
